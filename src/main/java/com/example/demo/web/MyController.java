@@ -8,6 +8,10 @@ public class MyController {
 
     @RequestMapping("hello")
     public String hello(){
-        return "world";
+        int sum = 0;
+        for (int i = 0; i < 10 ; i++) {
+            sum += i;
+        }
+        return sum + "";
     }
 }
